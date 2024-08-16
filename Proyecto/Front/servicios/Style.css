@@ -1,0 +1,1471 @@
+/*Fuentes de letras*/
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=M+PLUS+Rounded+1c&family=Patua+One&display=swap");
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/*Parte superior navbar*/
+
+/* Estilos para el navbar scrolleable */
+.navbar {
+  transition: top 0.3s;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    position: static;
+  }
+}
+
+.navbar {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+
+.navbar .nav-link {
+  color: rgb(0, 108, 158);
+}
+
+.navbar .nav-link:hover {
+  color: #333;
+}
+
+/*Parte del Header o carusel*/
+#mainCarousel {
+  height: 500px;
+}
+
+#mainCarousel .carousel-inner {
+  height: 100%;
+}
+
+#mainCarousel .carousel-item {
+  height: 100%;
+}
+
+#mainCarousel .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción de la imagen y asegura que cubra todo el contenedor */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 10%;
+}
+
+.caption-content {
+  max-width: 50%;
+}
+
+.carousel-caption h2 {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.btnCaruselSlider1 {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #63ad1a;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.btnCaruselSlider1:hover {
+  transition: 0.5s;
+  background-color: rgb(85, 217, 29);
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+@media (max-width: 992px) {
+  .carousel-caption {
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .caption-content {
+    max-width: 80%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .carousel-item {
+    height: 450px;
+  }
+
+  .caption-content {
+    max-width: 100%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/*Seccion Bienvenida*/
+.SeccionBienvenida {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.TituloSeccionBienvenida {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.SubtituloSeccionBienvenida {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.SeccionBienvenida p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.bienvenida {
+  max-width: 500px;
+}
+
+.btnSeccionBienvenida {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.btnSeccionBienvenida:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+
+@media (max-width: 1200px) {
+  .bienvenida {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bienvenida {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bienvenida {
+    max-width: 500px;
+  }
+  .SeccionBienvenida h2 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .SeccionBienvenida h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .SeccionBienvenida p {
+    margin-bottom: 0.8rem;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .ContenedorBtn {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .bienvenida {
+    max-width: 250px;
+  }
+  .SeccionBienvenida h2 {
+    font-size: 2rem;
+  }
+  .SeccionBienvenida h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .SeccionBienvenida p {
+    margin-bottom: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*Parte Seccion Valores*/
+.SeccionValores {
+  background-color: rgb(0, 63, 92);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.filaSeccionValores {
+  margin-top: 30px;
+}
+.feature {
+  padding: 20px;
+}
+.tituloSeccionValores {
+  font-weight: bolder;
+  font-family: "Patua One", serif;
+  font-size: 2.5rem;
+}
+.subtituloSeccionValores {
+  font-family: "Patua One", serif;
+  font-size: 1.5rem;
+}
+.parrafoSeccionValores {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Parte Seccion Servicios*/
+.SeccionServicios {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.tituloServicios {
+  font-family: "Patua One", serif;
+  color: rgb(0, 63, 92);
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.imgServicio {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.subtituloSeccionServicios {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  color: rgb(0, 63, 92);
+  font-size: 1.3rem;
+}
+.btnSeccionServicios {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Ensure it behaves like a button */
+}
+.btnSeccionServicios:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+
+/*Parte de los testimonios*/
+.SeccionTestimonios {
+  background-color: #f3f3f3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.tituloTestimonios {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 5px solid #f8f9fa;
+}
+.tituloTestimonios {
+  font-family: "Patua One", serif;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.testimonial p {
+  color: #666;
+  font-style: italic;
+}
+
+.testimonial h5 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.testimonial .text-muted {
+  font-size: 0.9em;
+}
+
+/*Parte para la pagina dedicada sooo a servicios*/
+.PaginaServiciosTotales {
+  background-color: #f8f9fa;
+}
+.TitituloPaginaServicios {
+  font-family: "Patua One", serif;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.service-card {
+  border: none;
+  background: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.TituloCardServicios {
+  margin-top: 20px;
+  font-family: "Patua One", serif;
+  color: rgb(0, 63, 92);
+}
+
+.service-card .card-body {
+  padding: 0px; /* Ajusta el padding según sea necesario */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .btn {
+  margin-top: auto;
+  margin-bottom: 30px;
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  max-width: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  align-self: flex-start;
+}
+
+.service-card .btn:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+
+.ParrafoCardServicios {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9srem;
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .TitituloPaginaServicios {
+    font-family: "Patua One", serif;
+    color: rgb(0, 63, 92);
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .service-card .btn {
+    margin-top: auto;
+    margin-bottom: 30px;
+    font-family: "Patua One", serif;
+    background-color: rgb(0, 63, 92);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    max-width: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: flex-start;
+  }
+  .TituloCardServicios {
+    margin-top: 20px;
+    font-family: "Patua One", serif;
+    color: rgb(0, 63, 92);
+    font-size: 1.7rem;
+  }
+  .tituloSeccionValores {
+    font-weight: bolder;
+    font-family: "Patua One", serif;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*Formato para informacion de servicios*/
+.seccionPrincipalServicios {
+  margin-top: 100px;
+}
+
+.TituloSeccionPediatria {
+  text-align: start;
+}
+
+.TituloSeccionPediatria h1 {
+  font-size: 2.5rem;
+  font-family: "Patua One", serif;
+  font-weight: bold;
+  color: rgb(0, 63, 92);
+  margin-top: 50px;
+  margin-bottom: 1rem;
+}
+
+.TituloSeccionPediatria p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+
+.InformacionPediatria {
+  padding: 3rem 0;
+}
+
+.ContenidoPediatria {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.ContenidoPediatria h2 {
+  font-family: "Patua One", serif;
+  font-weight: 600px;
+  color: rgb(0, 63, 92);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ContenidoPediatria p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.ContenidoPediatria ul {
+  padding-left: 1.5rem;
+}
+
+.ContenidoPediatria li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.CarouselPediatria .carousel-inner {
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.CarouselPediatria .carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.CarouselPediatria .custom-control {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 123, 180);
+  border-radius: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CarouselPediatria .custom-control .carousel-control-prev-icon,
+.CarouselPediatria .custom-control .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1200px) {
+  .ContenidoPediatria {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ContenidoPediatria {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .TituloSeccionPediatria h1 {
+    font-size: 2.3rem;
+  }
+
+  .ContenidoPediatria {
+    max-width: 500px;
+  }
+
+  .ContenidoPediatria h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .ContenidoPediatria p,
+  .ContenidoPediatria ul {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .ContenidoPediatria li {
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .TituloSeccionPediatria h1 {
+    font-size: 2rem;
+  }
+
+  .ContenidoPediatria {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .ContenidoPediatria h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*Seccion anuncio agendar cita*/
+.agendar-cita {
+  background-color: rgb(0, 63, 92);
+  color: white;
+  padding: 2rem 0;
+}
+
+.agendar-cita h2 {
+  font-family: "Patua One", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.agendar-cita p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btnAgendar {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Patua One", serif;
+  background-color: white;
+  color: rgb(0, 63, 92);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btnAgendar:hover {
+  background-color: rgb(0, 123, 180);
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .btnAgendar {
+    font-size: 1.2rem;
+  }
+  .agendar-cita h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .agendar-cita p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agendar-cita .col-md-6 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .btnAgendar {
+    font-size: 1rem;
+  }
+  .agendar-cita h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .agendar-cita p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .btnAgendar {
+    font-size: 1rem;
+  }
+  .agendar-cita h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .agendar-cita p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*Parte del footer*/
+.site-footer {
+  background-color: #333;
+  color: #999;
+  padding: 50px 0 20px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: "Patua One", serif;
+}
+
+.site-footer h3 {
+  font-family: "Patua One", serif;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.ParrafoDescFooter {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+.site-footer h2 {
+  color: #fff;
+}
+
+.footer-services {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-services li {
+  margin-bottom: 10px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+
+.footer-services a {
+  color: rgb(0, 123, 180);
+  text-decoration: none;
+}
+
+.site-footer i {
+  color: rgb(0, 123, 180);
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  background-color: #202020;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  font-size: 1rem;
+}
+.social-icons {
+  padding-bottom: 15px; /* Añade padding para separarlos del borde inferior */
+}
+.social-icons a {
+  color: rgb(0, 123, 180);
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .social-icons a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .footer-bottom p {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+}
+
+/*Parte de contacto*/
+.tituloContacto {
+  font-family: "Patua One", serif;
+  font-weight: bold;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.InputsContacto {
+  background-color: #f1f1f1;
+  border-radius: 0;
+  border: 0;
+}
+
+.InputsContacto::placeholder {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+.InputsContacto:focus {
+  background-color: #f1f1f1;
+  outline: none;
+  border-radius: 0;
+  border: 0;
+}
+
+.EtiquetaContacto {
+  font-family: "Patua One", serif;
+  font-weight: 300px;
+  color: rgb(0, 63, 92);
+}
+.btnContacto {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btnContacto:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+
+/*Sección página 404 Error*/
+.SeccionError {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TituloSeccionError {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.AvisoSeccionError {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.SeccionError p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btnSeccionErrorHome {
+  font-family: "Patua One", serif;
+  align-items: center;
+  background-color: rgb(0, 63, 92);
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Parte del Registro*/
+.Registro {
+  background-color: rgb(0, 108, 158);
+}
+
+.cardResgistro {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffff;
+}
+.InputRegistroUsuario {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.InputRegistroUsuario::placeholder {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+.InputRegistroUsuario:focus {
+  background-color: #f1f1f1;
+  outline: none;
+  border-radius: 0;
+  border: 0;
+}
+.cardBodyResgistro {
+  padding: 40px;
+}
+
+.btnRegistroUsuario {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnRegistroUsuario:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: auto;
+}
+
+/*Parte del login*/
+.login {
+  background-color: rgb(238, 238, 238);
+}
+.tituloLogin {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  padding: 7px 20px;
+  color: rgb(0, 63, 92);
+  font-size: 3rem;
+}
+.cardLogin {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffff;
+}
+
+.InputLoginUsuario {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.InputLoginUsuario::placeholder {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+}
+
+.InputLoginUsuario:focus {
+  background-color: #f1f1f1;
+  outline: none;
+  border-radius: 0;
+  border: 0;
+}
+
+.cardBodyLogin {
+  padding: 40px;
+}
+
+.btnLoginUsuario {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 7px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnLoginUsuario:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+  color: #fff;
+}
+
+/*Sección Imagen Principal Acerca de:*/
+
+/*Seccion Historia*/
+
+.SeccionHistoria {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.TituloSeccionHistoria {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+.SubtituloSeccionHistoria {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SeccionHistoria p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+/*Seccion Misión*/
+
+.SeccionMision {
+  margin-top: 50px;
+}
+
+.TituloSeccionMision {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  background-color: rgb(0, 63, 92);
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-shadow: 2px 5px #7fb2c2;
+  text-transform: uppercase;
+}
+
+.SubtituloSeccionMision {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SeccionMision p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.Mision {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*Seccion Visión*/
+
+.TituloSeccionVision {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  background-color: rgb(0, 63, 92);
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-shadow: 2px 5px #7fb2c2;
+  text-transform: uppercase;
+}
+
+.SubtituloSeccionVision {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SeccionVision p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.Vision {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .TituloSeccionHistoria {
+    font-size: 1.9rem;
+  }
+
+  .SubtituloSeccionHistoria {
+    font-size: 1.3rem;
+  }
+
+  .SeccionHistoria p {
+    font-size: 1rem;
+  }
+  .SubtituloSeccionMision {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+
+  .SeccionMision p {
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .TituloSeccionHistoria {
+    font-size: 1.9rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SubtituloSeccionHistoria {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionHistoria p {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .SubtituloSeccionMision {
+    text-align: center;
+    font-size: 2.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionMision p {
+    text-align: center;
+
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /*Seccion Visión*/
+
+  .SubtituloSeccionVision {
+    text-align: center;
+
+    font-size: 2.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionVision p {
+    text-align: center;
+
+    font-size: 1.1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .TituloSeccionHistoria {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SubtituloSeccionHistoria {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionHistoria p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SubtituloSeccionMision {
+    text-align: center;
+
+    font-size: 1.6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionMision p {
+    text-align: center;
+
+    font-size: 0.9rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /*Seccion Visión*/
+
+  .SubtituloSeccionVision {
+    text-align: center;
+
+    font-size: 1.6rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .SeccionVision p {
+    text-align: center;
+
+    font-size: 0.9rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*Parte la vista del usuario*/
+.tituloVistaCliente {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+}
+.tituloCardVistaCliente {
+  font-family: "Patua One", serif;
+  font-weight: 500;
+  color: rgb(0, 63, 92);
+  font-size: 1.8rem;
+}
+.textoCardVistaCliente {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btnVistaCliente1 {
+  font-family: "Patua One", serif;
+  background-color: rgb(0, 63, 92);
+  padding: 9px 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnVistaCliente1:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+/*segundo btn*/
+.btnVistaCliente2 {
+  font-family: "Patua One", serif;
+  background-color: #63ad1a;
+  padding: 9px 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnVistaCliente2:hover {
+  transition: 0.5s;
+  background-color: rgb(85, 217, 29);
+}
+/*tercer btn*/
+.btnVistaCliente3 {
+  font-family: "Patua One", serif;
+  background-color: rgb(78, 199, 255);
+  padding: 9px 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnVistaCliente3:hover {
+  transition: 0.5s;
+  background-color: rgb(0, 108, 158);
+}
+.iconoVistaCliente1 {
+  color: rgb(0, 108, 158);
+}
+.iconoVistaCliente2 {
+  color: #63ad1a;
+}
+.iconoVistaCliente3 {
+  color: rgb(78, 199, 255);
+}
+.cardCardVistaCliente {
+  background-color: #fdfdfd;
+  border: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/*Exportar Citas*/
+.cardExportar {
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.cardExportar-title {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.cardExportar-text {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.btnCrExportar {
+  background-color: #63ad1a;
+  padding: 9px 20px;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btnCrExportar:hover {
+  transition: 0.5s;
+  background-color: rgb(85, 217, 29);
+}
+
+.TituloHistorialCitas {
+  font-family: "Patua One", serif;
+  font-weight: bolder;
+  color: rgb(0, 63, 92);
+  font-size: 2.5rem;
+}
+.SubtituloHistorialCitas {
+  font-family: "Patua One", serif;
+  font-weight: 500;
+  color: rgb(0, 63, 92);
+  font-size: 1.5rem;
+}
+
+.tituloNombreUsuario {
+  font-family: "Patua One", serif;
+  font-weight: 500;
+  color: rgb(0, 63, 92);
+}
+
+.tituloContra {
+  font-family: "Patua One", serif;
+  font-weight: 500;
+  color: rgb(0, 63, 92);
+}
+.TituloServiciosE {
+  font-family: "Patua One", serif;
+  font-weight: 500;
+  color: rgb(0, 63, 92);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.ParrafoServiciosE {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
